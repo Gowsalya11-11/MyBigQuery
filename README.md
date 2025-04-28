@@ -29,14 +29,12 @@ Using local python setup to integrating with Google cloud BigQuery(Python + Bigq
 7.	Click "Create Key" and choose JSON.
 8.	Download the JSON key file and store it securely.
 •	Set the GOOGLE_APPLICATION_CREDENTIALS environment variable:
-      In your terminal or command prompt, set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of the JSON key file you downloaded:
-export GOOGLE_APPLICATION_CREDENTIALS="path/to/your/service-account-file.json"
-Replace "path/to/your/service-account-file.json" with the actual path to your JSON key file. In Windows, use set instead of export.
+     
 
 5. Use the BigQuery client in below Python code:
       Now that you've imported the library and authenticated, you can use the BigQuery client to interact with BigQuery. Here's a basic example of how to create a BigQuery client and run a query
 
-from google.cloud import bigquery
+from google.cloud import bigquery  
 import pandas as pd
 
 ### Construct a BigQuery client object.
